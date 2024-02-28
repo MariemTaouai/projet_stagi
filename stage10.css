@@ -1,0 +1,800 @@
+.footer {
+    text-align: center;
+position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #6c6c6c;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+a{
+    text-decoration: none;
+
+}
+.hreo{
+    height: 100vh;
+    width: 90vh;
+  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px 310px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color :darkviolet;
+    position: relative;
+    padding : 10px 0;
+    font-weight: bold;
+
+}
+nav ul li a:hover{
+    color :#f70852;
+
+}
+nav ul li a::after {
+    content : "";
+    bottom : 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background:#f70852 ;
+    transition: .3s;
+
+}
+nav ul li a:hover::after {
+     width:100%;
+}
+
+
+.btn {
+    
+    color: #f70852;
+    font-style: normal;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    background: blueviolet;
+    padding: 15px 30px; /* Ajustement du padding pour un meilleur espacement */
+    margin: 20px; /* Ajustement de la marge */
+    border-radius: 30px;
+    text-decoration: none; /* Supprime le soulignement du lien */
+    display: inline-block; /* Permet au lien de se comporter comme un bloc en ligne */
+}
+
+
+.btn:hover {
+    background:#f70852;
+    color: darkviolet;
+}
+.image img{
+    display: block;
+    width: 40%;
+    height:auto ;
+    position: absolute;
+    bottom: 0;
+    left :-40%;
+
+
+}
+.image{
+    width :40%;
+position: absolute;
+bottom: 610px;
+right:710px;
+}
+
+.footer {
+    text-align: center;
+position: fixed;
+
+    bottom: 0;
+    width: 100%;
+   
+    color: #6c6c6c;
+}
+.image1{
+    width:40%;
+    height: 100%;
+    position: absolute;
+        bottom: -255px;
+        margin-right: 20px;
+        font-size: medium;
+    }
+    .en11
+    {
+        
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -275px;
+        left: 210px;
+    }
+    .en12{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -275px;
+        left: 519px;
+    }
+    .en13{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -345px;
+        left: 515px;
+    }
+    .en14{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -345px;
+        left: 215px;
+    }
+    .en15{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -425px;
+        left: 215px;
+    }
+    .en16{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -495px;
+        left: 215px;
+    }
+    .en17{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -495px;
+        left: 515px;
+    }
+    .en18{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -425px;
+        left: 515px;
+    }
+    .image2{
+        width:70%;
+        height: 100%;
+        position: absolute;
+            bottom: -240px;
+            margin-right: 200px;
+            font-size: medium;
+            left: 870px;
+        }
+     .en21
+    {
+        
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -275px;
+        left: 900px;
+    }
+    .en22{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -275px;
+        left: 1200px;
+    }
+    .en23{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -350px;
+        left: 900px;
+    }
+    .en24{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -350px;
+        left: 1200px;
+    }
+    .en25{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -425px;
+        left: 900px;
+    }
+    .en26{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -490px;
+        left: 900px;
+    }
+    
+    .en28{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -425px;
+        left: 1200px;
+    }
+    .image3{
+        width:70%;
+        height: 100%;
+        position: absolute;
+            bottom: -600px;
+            margin-right: 200px;
+            font-size: medium;
+            left: 870px;
+        }
+        .en31
+    {
+        
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -630px;
+        left: 890px;
+    }
+    .en32{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -630px;
+        left: 1180px;
+    }
+    .en33{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -780px;
+        left: 890px;
+    }
+    .en34{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -700px;
+        left: 890px;
+    }
+    .en35{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -850px;
+        left: 890px;
+    }
+    .en36{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -700px;
+        left: 1180px;
+    }
+    .en37{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -780px;
+        left: 1180px;
+    }
+    .en38{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -850px;
+        left: 1180px;
+    }
+    .image4{
+    width:40%;
+    height: 100%;
+    position: absolute;
+        bottom: -600px;
+        margin-right: 20px;
+        font-size: medium;
+    }
+    .en41
+    {
+        
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -620px;
+        left: 220px;
+    }
+    .en42{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -620px;
+        left: 530px;
+    }
+    .en43{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -780px;
+        left: 530px;
+    }
+    .en44{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -690px;
+        left: 530px;
+    }
+    .en45{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -850px;
+        left: 530px;
+    }
+    .en46{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -690px;
+        left: 220px;
+    }
+    .en47{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -780px;
+        left: 220px;
+    }
+    .en48{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -850px;
+        left: 220px;
+    }
+    .image5{
+        width:40%;
+    height: 100%;
+    position: absolute;
+        bottom: -950px;
+        margin-right: 20px;
+        font-size: medium;
+    
+    }
+    .en51
+    {
+        
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1190px;
+        left: 200px;
+    }
+    .en52{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1190px;
+        left: 500px;
+    }
+    .en53{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1125px;
+        left: 500px;
+    }
+    .en54{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1050px;
+        left: 500px;
+    }
+    .en55{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -980px;
+        left: 500px;
+    }
+    .en56{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1125px;
+        left: 200px;
+    }
+    .en57{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1050px;
+        left: 200px;
+    }
+    .en58{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -980px;
+        left: 200px;
+    }
+    .image6{
+        width:70%;
+        height: 100%;
+        position: absolute;
+            bottom: -950px;
+            margin-right: 200px;
+            font-size: medium;
+            left: 870px;
+    
+    }
+    .en61
+    {
+        
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1170px;
+        left: 890px;
+    }
+    .en62{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1170px;
+        left: 1150px;
+    }
+    .en63{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1110px;
+        left: 1150px;
+    }
+    .en64{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1040px;
+        left: 1150px;
+    }
+    .en65{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -978px;
+        left: 1150px;
+    }
+    .en66{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1110px;
+        left: 885px;
+    }
+    .en67{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1040px;
+        left: 898px;
+    }
+    .en68{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -980px;
+        left: 898px;
+    }
+    .image7{
+        width:70%;
+        height: 100%;
+        position: absolute;
+            bottom: -1350px;
+            margin-right: 200px;
+            font-size: medium;
+            left: -6px;
+    }
+    .en71
+    {
+        
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1370px;
+        left: 230px;
+    }
+    .en72{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1370px;
+        left: 515px;
+    }
+    .en73{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1440px;
+        left: 230px;
+    }
+    .en74{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1590px;
+        left: 230px;
+    }
+    .en75{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1520px;
+        left: 230px;
+    }
+    .en76{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1520px;
+        left: 515px;
+    }
+    .en77{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1440px;
+        left: 515px;
+    }
+    .en78{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1590px;
+        left: 515px;
+    }
+    .image8{
+        width:70%;
+        height: 100%;
+        position: absolute;
+            bottom: -2100px;
+            margin-right: 200px;
+            font-size: medium;
+            left: 20px;
+    }
+    .en81{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -2110px;
+        left: 250px;
+    }
+    .en82{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -2110px;
+        left: 550px;
+    }
+    .image9{
+        width:70%;
+        height: 100%;
+        position: absolute;
+            bottom: -1700px;
+            margin-right: 200px;
+            font-size: medium;
+            left: 20px;
+    }
+    .en91
+    {
+        
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1730px;
+        left: 230px;
+    }
+    .en92{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1730px;
+        left: 550px;
+    }
+    .en93{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1800px;
+        left: 230px;
+    }
+    .en94{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1875px;
+        left: 230px;
+    }
+    .en95{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1950px;
+        left: 230px;
+    }
+    .en96{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1950px;
+        left: 550px;
+    }
+    .en97{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1880px;
+        left: 550px;
+    }
+    .en98{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1800px;
+        left: 550px;
+    }
+    .image10{
+        width:70%;
+        height: 100%;
+        position: absolute;
+            bottom: -1340px;
+            margin-right: 200px;
+            font-size: medium;
+            left: 870px;
+    }
+    .en101
+    {
+        
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1360px;
+        left: 1170px;
+    }
+    .en102{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1500px;
+        left: 1170px;
+    }
+    .en103{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1570px;
+        left: 1170px;
+    }
+    .en104{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1570px;
+        left: 900px;
+    }
+    .en105{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1500px;
+        left: 900px;
+    }
+    .en106{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1430px;
+        left: 1170px;
+    }
+    .en107{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1360px;
+        left: 900px;
+    }
+    .en108{
+        font-size: 17px;
+        position: absolute;
+        width :40%;
+        height: 100%;
+        bottom: -1430px;
+        left: 890px;
+    }

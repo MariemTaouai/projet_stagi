@@ -1,0 +1,37 @@
+.footer {
+    text-align: center;
+position: fixed;
+
+    bottom: 0;
+    width: 100%;
+   
+    color: #6c6c6c;
+}
+.cadre{
+    left:400px;
+    right:100px;
+   
+    bottom: -100px;
+     position: relative;
+     width: 875px;
+     height:500px;
+    background-color: beige;
+     box-shadow: 0 0 12px darkviolet;
+
+}
+#formation{
+    bottom: -30px;
+    position: relative;
+	width: 50%;
+	height: 25px;
+	background: #e0dede;
+
+	margin: 10px auto;
+	padding: 20px;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+}.butt{
+    bottom: -90px;
+    position: relative;
+}
