@@ -1,0 +1,342 @@
+a{
+  text-decoration: none;
+
+}
+.hreo{
+  height: 100vh;
+  width: 100vh;
+
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 20px 310px;
+
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color :darkviolet;
+  position: relative;
+  padding : 10px 0;
+  font-weight: bold;
+
+}
+nav ul li a:hover{
+  color :#f70852;
+
+}
+nav ul li a::after {
+  content : "";
+  bottom : 0;
+  left: 0;
+  width: 0;
+  position: absolute;
+  height: 3px;
+  background:#f70852 ;
+  transition: .3s;
+
+}
+nav ul li a:hover::after {
+   width:100%;
+}
+
+
+.btn{
+  
+  color: #f70852;
+  font-style: normal;
+  font-size: 20px;
+  font-family: 'Jost', sans-serif;
+  text-transform: uppercase;
+  background: blueviolet;
+  padding: 15px 30px; /* Ajustement du padding pour un meilleur espacement */
+  margin: 20px; /* Ajustement de la marge */
+  border-radius: 30px;
+  text-decoration: none; /* Supprime le soulignement du lien */
+  display: inline-block; /* Permet au lien de se comporter comme un bloc en ligne */
+}
+
+
+.btn:hover {
+  background:#f70852;
+  color: darkviolet;
+}
+.imagee img{
+  display: block;
+  width: 40%;
+  height:auto ;
+  position: absolute;
+  bottom: 0;
+  left :-30%;
+
+
+}
+.imagee{
+  width :40%;
+position: absolute;
+bottom: 630px;
+right:710px;
+}
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+
+.screen-reader-text {
+clip: rect(1px, 1px, 1px, 1px);
+position: absolute !important;
+height: 1px;
+width: 1px;
+overflow: hidden;
+}
+
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+
+span 
+{
+  color: darkviolet;
+  
+}
+
+img {
+display: block;
+border: 0;
+width: 100%;
+height: auto;
+}
+
+code {
+font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+}
+
+/* Header */
+
+.masthead {
+text-align: center;
+border-bottom: 5px solid hsl(5, 5%, 90%);
+box-shadow: 200px 2px 200px rgb(235, 213, 221);
+font-size: small;
+
+width: 90%;
+
+  height: 300px;
+
+}
+
+.intro {
+margin: 0 auto;
+padding: 1em 1em 2em;
+
+font-size: 90%;
+text-align: center;
+line-height: 1.4em;
+
+column-gap: 2em;
+}
+.masthead h1 
+{color: darkviolet;
+
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;}
+.intro p {
+color: #1f1f25;
+  font-size: 18px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+font-style:Arial, Helvetica, sans-serif;
+font-weight: 80;
+line-height: 175%; /* 15px */
+font-style:inherit;
+text-align: center;
+
+
+}
+
+/* Colophon section */
+.colophon {
+padding: 2em;
+background: hsl(0, 0%, 10%);
+color: white;
+font-size: 90%;
+text-align: center;
+line-height: 1.8em;
+}
+
+.colophon a {
+color: white;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+border-bottom: 1px solid white;
+}
+
+/*--------------------------------------------------------------
+Cards:
+--------------------------------------------------------------*/
+
+.cards {
+max-width: 25em;
+margin: 1em auto;
+padding: 0;
+list-style-type: none;
+
+}
+
+.cards a {
+display: block;
+margin-bottom: 1em;
+text-decoration: none;
+}
+
+.caption {
+padding: 1em;
+font-size: 90%;
+color: black;
+}
+
+.caption-title {
+margin: 0;
+font-size: 1.4em;
+line-height: 1em;
+}
+
+.location {
+padding: .5em 0;
+color: hsl(0, 0%, 40%);
+}
+
+.caption p {
+margin-top: .5em;
+margin-bottom: 0;
+line-height: 1.3em;
+}
+
+.cards a:focus .caption,
+.cards a:hover .caption {
+background: hsl(0, 0%, 97%);
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+@supports (grid-area: auto) {
+
+@media screen and (min-width: 27em) {
+
+  .cards {
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  .card-item,
+  .card-item a {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  box-shadow: 5px 2px 5px rgb(188, 137, 188);
+  }
+
+  .cards a:focus,
+  .cards a:hover {
+    outline: 1px solid hsl(0, 0%, 80%);
+  }
+  
+  .cards a:focus .caption,
+  .cards a:hover .caption {
+    background: white;
+  }
+  
+  .card {
+    margin: .5em;
+    display: grid;
+    grid-template-columns: 8em auto;
+    overflow: hidden;
+  }
+  
+ 
+  
+  .caption {
+    background: white;
+  }
+  
+}
+
+@media screen and (min-width: 62em) {
+
+  .cards {
+    max-width: none;
+    margin: 1em 0;
+    padding: 0 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25em);
+    grid-gap: 1em;
+    justify-content: center;
+  }
+
+  .double {
+    grid-row: span 3;
+  }
+
+  .double .card {
+    display: block;
+  }
+  
+  .double img {
+    height: calc( (100% / 3) * 2 + .5em);
+  }
+
+}
+
+}
+.search-form {
+
+ 
+   
+  font-style: normal;
+  font-size: 15px;
+  font-family: 'Jost', sans-serif;;
+}
+
+
+
+#search-input {
+  padding: 8px;
+  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+button {
+  padding: 8px 5px;
+  background-color: #0a0b0a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkviolet;
+}
+
+.footer {
+  text-align: center;
+position: fixed;
+
+  bottom: 0;
+  width: 100%;
+ 
+  color: #6c6c6c;
+}

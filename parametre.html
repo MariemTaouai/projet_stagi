@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+
+    <link rel="stylesheet" href="lien_vers_fontawesome.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+
+.choisir{
+        font-size : 20px;
+        color:#f70852;
+        text-align: center;
+        font-family: cursive;
+    }
+    .admin{
+        font-size: 50px;
+        text-align: center;
+        color:#f70852;
+
+    }
+a{
+    text-decoration: none;
+
+}
+.hreo{
+    height: 100vh;
+    width: 100vh;
+  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px 190px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color :darkviolet;
+    position: relative;
+    padding : 10px 0;
+    font-weight: bold;
+
+}
+nav ul li a:hover{
+    color :#f70852;
+
+}
+nav ul li a::after {
+    content : "";
+    bottom : 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background:#f70852 ;
+    transition: .3s;
+
+}
+nav ul li a:hover::after {
+     width:100%;
+}
+
+
+.btn {
+    
+    color: #f70852;
+    font-style: normal;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    background: blueviolet;
+    padding: 15px 30px; /* Ajustement du padding pour un meilleur espacement */
+    margin: 20px; /* Ajustement de la marge */
+    border-radius: 30px;
+    text-decoration: none; /* Supprime le soulignement du lien */
+    display: inline-block; /* Permet au lien de se comporter comme un bloc en ligne */
+}
+
+
+.btn:hover {
+    background:#f70852;
+    color: darkviolet;
+}
+.image img{
+    display: block;
+    width: 40%;
+    height:auto ;
+    position: absolute;
+    bottom: 0;
+    left :-140%;
+
+
+}
+.image{
+    width :40%;
+position: absolute;
+bottom: 590px;
+right:99px;
+}
+.logout {
+   
+    color:#f70852; /* Couleur du texte blanc */
+        
+font-size: 20px;
+    cursor: pointer; /* Changement de curseur au survol */
+  
+}
+
+
+
+.a1{
+    
+    width:70px;
+
+}
+.content{
+    width: 800px;
+    margin: auto;
+    background-color: antiquewhite;
+    position: absolute;
+bottom: 200px;
+right:500px;
+box-shadow: 0 0 12px darkviolet;
+   
+   
+    
+}
+
+
+</style>
+<body>
+    <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="acceuil.html">ACCEUIL</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="stage.html">STAGE</a></li>
+                <li><a href="courses.php">COURSES</a></li>
+            </ul>
+     <div class="image">
+            <img src="assets1\Logoo ulistrator2.png" alt="Logo">
+        </div>
+        
+            <div class="container">
+                <a href="login.html" class="btn">Inscrire</a>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <h1 class="admin">WELCOME ADMIN</h1>
+        <div class="choisir">
+            <a href="ajoutformation.php">ajouter formation</a>
+            <h3>ou</h3>
+            <a href="supprimerformation.php">supprimer formation</a>
+            <h3>ou</h3>
+            <a href="modiferformation.php">modifier formation</a>
+        </div>
+        <img src="assets1/sortir.png" class="a1">
+        <a href="logout.php" class="logout">Déconnexion</a>
+    </div>
+</body>
+</html>

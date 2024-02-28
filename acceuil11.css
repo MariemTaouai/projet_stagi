@@ -1,0 +1,173 @@
+a{
+    text-decoration: none;
+
+}
+.hreo{
+    height: 100vh;
+    width: 100vh;
+  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:20px 320px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color :darkviolet;
+    position: relative;
+    padding : 10px 0;
+    font-weight: bold;
+
+}
+nav ul li a:hover{
+    color :#f70852;
+
+}
+nav ul li a::after {
+    content : "";
+    bottom : 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background:#f70852 ;
+    transition: .3s;
+
+}
+nav ul li a:hover::after {
+     width:100%;
+}
+
+
+.btn {
+    
+    color: #f70852;
+    font-style: normal;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    background: blueviolet;
+    padding: 15px 30px; /* Ajustement du padding pour un meilleur espacement */
+    margin: 20px; /* Ajustement de la marge */
+    border-radius: 30px;
+    text-decoration: none; /* Supprime le soulignement du lien */
+    display: inline-block; /* Permet au lien de se comporter comme un bloc en ligne */
+}
+
+
+.btn:hover {
+    background:#f70852;
+    color: darkviolet;
+}
+.imagee img{
+    display: block;
+    width: 40%;
+    height:auto ;
+    position: absolute;
+    bottom: 0;
+    left :-40%;
+
+
+}
+.imagee{
+    width :40%;
+position: absolute;
+bottom: 610px;
+right:690px;
+}
+
+*{
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+    
+.footer {
+    text-align: center;
+position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #6c6c6c;
+}
+    
+
+.detail{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+ 
+}
+.detail h1{
+    color :#1f1f25;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+    
+    position: relative;
+    animation: mymove 5s infinite;
+  
+  }
+  
+  @keyframes mymove {
+    from {left: -200px;}
+    to {left: 100px;}
+    
+  }
+
+
+.detail h1 span 
+{
+    color: darkviolet;
+    
+}
+.detail p{
+    color: #1f1f25;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+font-style:Arial, Helvetica, sans-serif;
+font-weight: 400;
+line-height: 125%; /* 15px */
+
+}
+.image img{
+    display: block;
+    width: 90%;
+    height:auto ;
+    position: absolute;
+    bottom: -10;
+    left :30%;
+
+
+}
+.image{
+    width :40%;
+height: 80%;
+position: absolute;
+bottom:0;
+right:90px;
+}
+.image2{
+    position: absolute;
+
+    width :60%;
+    bottom: 0px;
+}
+
+
+
+
+

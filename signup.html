@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="signuupp.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+		<div class="hero">
+        <nav>
+            <ul>
+                <li><a href="acceuil.html">ACCEUIL</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="stage.html">STAGE</a></li>
+                <li><a href="courses.php">COURSES</a></li>
+            </ul>
+     <div class="image">
+            <img src="assets1/Logoo ulistrator2.png" alt="Logo">
+        </div>
+        
+            <div class="container">
+                <a href="login.html" class="btn">Inscrire</a>
+            </div>
+        </nav>
+    </div>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			
+			<div class="signup">
+				<form action="process.signup.php" method="post" novalidate>
+                    
+					<label for="chk" aria-hidden="true">SIGNUP</label>
+					<input type="text" name="name" placeholder="User name">
+					<input type="email" name="email" placeholder="email" >
+					<input type="password" name="pswd" placeholder="Password" >
+					<input type="password" name="pswd1" placeholder="Repeat Password" >
+					<button type="submit" >Sign up</button>
+                    <p ><a  href ="login.html" class="aaa"> <-retour</a></p>
+                    <div class="l"></div>
+				</form>
+			</div>
+
+		
+	</div>
+</body>
+</html>

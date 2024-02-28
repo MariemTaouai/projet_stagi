@@ -1,0 +1,114 @@
+a{
+    text-decoration: none;
+
+}
+.hreo{
+    height: 100vh;
+    width: 100vh;
+  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px 320px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color :darkviolet;
+    position: relative;
+    padding : 10px 0;
+    font-weight: bold;
+
+}
+nav ul li a:hover{
+    color :#f70852;
+
+}
+nav ul li a::after {
+    content : "";
+    bottom : 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background:#f70852 ;
+    transition: .3s;
+
+}
+nav ul li a:hover::after {
+     width:100%;
+}
+
+
+.btn {
+    
+    color: #f70852;
+    font-style: normal;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    background: blueviolet;
+    padding: 15px 30px; /* Ajustement du padding pour un meilleur espacement */
+    margin: 20px; /* Ajustement de la marge */
+    border-radius: 30px;
+    text-decoration: none; /* Supprime le soulignement du lien */
+    display: inline-block; /* Permet au lien de se comporter comme un bloc en ligne */
+}
+
+
+.btn:hover {
+    background:#f70852;
+    color: darkviolet;
+}
+.image img{
+    display: block;
+    width: 40%;
+    height:auto ;
+    position: absolute;
+    bottom: 0;
+    left :-40%;
+
+
+}
+.image{
+    width :40%;
+position: absolute;
+bottom: 630px;
+right:690px;
+}
+
+h1{
+    color: darkviolet;
+}
+.cadre{
+    left:100px;
+   right:100px;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Clear les floats pour éviter des problèmes de mise en page */
+    position: relative;
+    width: 1500px;
+    height:500px;
+    border: 2px solid#f70852;
+    box-shadow: 0 0 12px darkviolet;
+}
+
+.img1 {
+    float: left; /* Positionne l'image 1 à gauche */
+    margin-right: 20px; /* Ajoute une marge à droite pour l'espace */
+}
+.footer {
+    text-align: center;
+position: fixed;
+
+    bottom: 0;
+    width: 100%;
+   
+    color: #6c6c6c;
+}
