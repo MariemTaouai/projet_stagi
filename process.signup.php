@@ -1,67 +1,51 @@
 <?php
 
 if (empty($_POST["name"])) {
-    die("NAME IS REQUIRED");
-}
-
-if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-    die("INVALID EMAIL ADDRESS");
-}
-
-if (strlen($_POST["pswd"]) < 8) {
-    die("PASSWORD MUST BE AT LEAST 8 CHARACTERS");
-}
-
-if (!preg_match("/[a-z]/i", $_POST["pswd"])) {
-    die("Password must contain at least one letter");
-}
-
-if (!preg_match("/[0-9]/", $_POST["pswd"])) {
-    die("Password must contain at least one number");
-}
-
-if ($_POST["pswd"] !== $_POST["pswd1"]) {
-    die("Verify your confirmation password");
-}
-
-// Récupérer les données du formulaire POST
-$name = $_POST["name"];
-$email = $_POST["email"];
-$password = $_POST["pswd"];
-
-// Hasher le mot de passe
-$password_hash = password_hash($password, PASSWORD_DEFAULT);
-
-// Assurez-vous que la connexion à la base de données est établie
-$mysqli = require __DIR__ . "/database.php";
-
-// Préparer la requête SQL pour l'insertion
-$sql = "INSERT INTO user (name, email, password_hash) VALUES (?, ?, ?)";
-
-// Initialiser une nouvelle instruction préparée
-$stmt = $mysqli->stmt_init();
-
-// Vérifier si la préparation de la requête a réussi
-if (!$stmt->prepare($sql)) {
-    die("SQL error: " . $mysqli->error);
-}
-
-// Lier les paramètres à la requête préparée
-$stmt->bind_param("sss", $name, $email, $password_hash);
-
-// Exécuter la requête
-$stmt->execute();
-
-// Vérifier si l'inscription a réussi
-if ($stmt->affected_rows > 0) {
-    echo "Inscription réussie!";
+    echo "NAME IS REQUIRED";
+} elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+    echo "INVALID EMAIL ADDRESS";
+} elseif (strlen($_POST["pswd"]) < 8) {
+    echo "PASSWORD MUST BE AT LEAST 8 CHARACTERS";
+} elseif (!preg_match("/[a-z]/i", $_POST["pswd"])) {
+    echo "Password must contain at least one letter";
+} elseif (!preg_match("/[0-9]/", $_POST["pswd"])) {
+    echo "Password must contain at least one number";
+} elseif ($_POST["pswd"] !== $_POST["pswd1"]) {
+    echo "Verify your confirmation password";
 } else {
-    echo "ce email deja utilise";
+    $mysqli = require __DIR__ . "/database.php";
+
+    // Vérifier lexistance de l'e-mail 
+    $email = $_POST["email"];
+    $email_sql = "SELECT COUNT(*) FROM user WHERE email = ?";
+    $check_stmt = $mysqli->prepare($email_sql);
+    $check_stmt->bind_param("s", $email);
+    $check_stmt->execute();
+    $check_stmt->bind_result($email_count);
+    $check_stmt->fetch();//recep res et stocker au var co
+
+    if ($email_count > 0) {
+        echo "Cet e-mail est déjà utilisé.";
+    } else {
+        $name = $_POST["name"];
+        $password = $_POST["pswd"];
+        $password_hash = password_hash($password, PASSWORD_DEFAULT);
+        $insert_sql = "INSERT INTO user (name, email, password_hash) VALUES (?, ?, ?)";
+        $insert_stmt = $mysqli->prepare($insert_sql);
+
+        if (!$insert_stmt) {
+            die("Erreur SQL: " . $mysqli->error);
+        }
+
+        $insert_stmt->bind_param("sss", $name, $email, $password_hash);
+        $insert_stmt->execute();
+
+        if ($insert_stmt->affected_rows > 0) {
+            echo "Inscription réussie!";
+        } else {
+            echo "Une erreur s'est produite lors de l'inscription.";
+        }
+    }
 }
 
-// Fermer l'instruction préparée
-$stmt->close();
-
-// Fermer la connexion à la base de données
-$mysqli->close();
 ?>

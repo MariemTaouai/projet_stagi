@@ -80,14 +80,15 @@ nav ul li a:hover::after {
 .imagee{
     width :40%;
 position: absolute;
-bottom: 610px;
-right:690px;
+bottom: 690px;
+right:820px;
 }
 
 *{
     margin :0;
     padding:0;
     box-sizing: border-box;
+      background-color: #f1e2e6;;
     
     
 }

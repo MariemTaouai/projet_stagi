@@ -7,6 +7,13 @@ a{
     width: 100vh;
   
 }
+*{
+  
+    background-color: #f1e2e6;
+    
+    
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -55,11 +62,11 @@ nav ul li a:hover::after {
     font-family: 'Jost', sans-serif;
     text-transform: uppercase;
     background: blueviolet;
-    padding: 15px 30px; /* Ajustement du padding pour un meilleur espacement */
-    margin: 20px; /* Ajustement de la marge */
+    padding: 15px 30px; 
+    margin: 20px;
     border-radius: 30px;
-    text-decoration: none; /* Supprime le soulignement du lien */
-    display: inline-block; /* Permet au lien de se comporter comme un bloc en ligne */
+    text-decoration: none; 
+    display: inline-block; 
 }
 
 
@@ -80,8 +87,8 @@ nav ul li a:hover::after {
 .image{
     width :40%;
 position: absolute;
-bottom: 630px;
-right:690px;
+bottom: 700px;
+right:770px;
 }
 
 h1{
@@ -91,17 +98,18 @@ h1{
     left:100px;
    right:100px;
     font-family: Arial, sans-serif;
-    overflow: hidden; /* Clear les floats pour éviter des problèmes de mise en page */
+    overflow: hidden; 
     position: relative;
     width: 1500px;
     height:500px;
     border: 2px solid#f70852;
     box-shadow: 0 0 12px darkviolet;
+    bottom: -100px;
 }
 
 .img1 {
-    float: left; /* Positionne l'image 1 à gauche */
-    margin-right: 20px; /* Ajoute une marge à droite pour l'espace */
+    float: left; 
+    margin-right: 20px; 
 }
 .footer {
     text-align: center;

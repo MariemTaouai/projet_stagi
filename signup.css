@@ -1,3 +1,6 @@
+*{
+    background-color: #f1e2e6;
+  }
 a{
     text-decoration: none;
 
@@ -21,7 +24,7 @@ nav ul li{
 }
 
 nav ul li a {
-    color :darkviolet;
+    color :rgb(5, 5, 5);
     position: relative;
     padding : 10px 0;
     font-weight: bold;
@@ -80,8 +83,8 @@ nav ul li a:hover::after {
 .image{
     width :40%;
 position: absolute;
-bottom: 610px;
-right:690px;
+bottom: 680px;
+right:820px;
 }
 
 .main{
